@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynergyX | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar relative-nav">
+        <div class="logo">R&<span>D</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">How it works</a>
+        </div>
+    </nav>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p id="loginSubtitle">Sign in as a Student</p>
+            </div>
+
+            <div class="role-toggle">
+                <button class="role-btn active" id="studentBtn">Student</button>
+                <button class="role-btn" id="facultyBtn">Faculty</button>
+            </div>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="name@institute.ac.in" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-pass">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn-primary w-full" id="submitBtn">Sign In to Dashboard</button>
+                
+                <p id="status" style="text-align: center; margin-top: 10px; font-weight: bold;"></p>
+            </form>
+            
+            <p class="signup-link">
+                New User? <a href="register.html">Register Here</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const studentBtn = document.getElementById('studentBtn');
+        const facultyBtn = document.getElementById('facultyBtn');
+        const loginSubtitle = document.getElementById('loginSubtitle');
+        const submitBtn = document.getElementById('submitBtn');
+
+        studentBtn.addEventListener('click', () => {
+            studentBtn.classList.add('active');
+            facultyBtn.classList.remove('active');
+            loginSubtitle.textContent = 'Sign in as a Student';
+            submitBtn.textContent = 'Sign In to Student Dashboard';
+        });
+
+        facultyBtn.addEventListener('click', () => {
+            facultyBtn.classList.add('active');
+            studentBtn.classList.remove('active');
+            loginSubtitle.textContent = 'Sign in as a Faculty Member';
+            submitBtn.textContent = 'Sign In to Faculty Portal';
+        });
+    </script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
