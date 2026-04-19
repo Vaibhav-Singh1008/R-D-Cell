@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynergyX | Faculty Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">R&<span>D</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="directory.html" style="color: var(--primary-cyan);">Directory</a>
+            <a href="login.html" class="login-btn">Logout</a>
+        </div>
+    </nav>
+
+    <section class="directory-section">
+        <div class="directory-header">
+            <h2>Faculty <span class="highlight">Directory</span></h2>
+            <p>Find the perfect mentor for your next breakthrough.</p>
+        </div>
+
+        <div class="filter-bar">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            
+            <select id="courseFilter">
+                <option value="all">All Courses</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="cyber">Cybersecurity</option>
+                <option value="data">Data Science</option>
+                <option value="cse">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="chem">Chemical Engineering</option>
+            </select>
+
+            <select id="expFilter">
+                <option value="all">Any Experience</option>
+                <option value="5">5+ Years</option>
+                <option value="10">10+ Years</option>
+                <option value="15">15+ Years</option>
+            </select>
+        </div>
+
+        <div class="faculty-grid" id="facultyGrid">
+
+            <div class="faculty-card" data-course="chem" data-exp="11">
+                <div class="card-img-wrapper">
+                    <img src="rohit verma.jpeg" alt="Dr. Rohit Verma">
+                </div>
+                <h3>Dr. Rohit Verma</h3>
+                <p class="dept">Chemical Engineering</p>
+                <p class="exp-tag">11 Years Experience</p>
+                <a href="rohit verma.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+
+            <div class="faculty-card" data-course="EEE" data-exp="18">
+                <div class="card-img-wrapper">
+                    <img src="surya deo chaoudhary.jpeg" alt="Dr. Surya Deo Choudhary">
+                </div>
+                <h3>Dr. Surya Deo Choudhary</h3>
+                <p class="dept">Electrical & Electronic Engineering</p>
+                <p class="exp-tag">18 Years Experience</p>
+                <a href="surya deo.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+
+            <div class="faculty-card" data-course="chem" data-exp="11">
+                <div class="card-img-wrapper">
+                    <img src="Ritu kumari.jpeg" alt="Ritu Kumari">
+                </div>
+                <h3>Rita Mehta</h3>
+                <p class="dept">Chemical Engineering</p>
+                <p class="exp-tag">11 Years Experience</p>
+                <a href="rita mehta.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+
+            <div class="faculty-card" data-course="cse" data-exp="22">
+                <div class="card-img-wrapper">
+                    <img src="Juhi kumari.jpeg" alt="Juhi Kumari">
+                </div>
+                <h3>Juhi Kumari</h3>
+                <p class="dept">Computer Science and Engineering</p>
+                <p class="exp-tag">11 Years Experience</p>
+                <a href="juhi kumari.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+
+            <div class="faculty-card" data-course="chem" data-exp="15">
+                <div class="card-img-wrapper">
+                    <img src="Dr.Ankit Sharma.jpeg" alt="Dr. Ankit Sharma">
+                </div>
+                <h3>Dr. Ankit Sharma</h3>
+                <p class="dept">Chemical Engineering</p>
+                <p class="exp-tag">15 Years Experience</p>
+                <a href="ankit sharma.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+
+            <div class="faculty-card" data-course="chem" data-exp="15">
+                <div class="card-img-wrapper">
+                    <img src="Dr.Arvind kumar Singh.jpeg" alt="Dr.pratik ranjan">
+                </div>
+                <h3>Dr.Pratik ranjan</h3>
+                <p class="dept">Artificial Intelligence</p>
+                <p class="exp-tag">16 Years Experience</p>
+                <a href="pratik ranjan.html"><button class="pitch-btn">View profile</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Synergy<span>X</span></div>
+            <p>Empowering the next generation of researchers at IIT Patna.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SynergyX Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
