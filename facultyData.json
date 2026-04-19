@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Dr. Sharma",
+    "domain": "Machine Learning",
+    "email": "sharma@college.edu"
+  },
+  {
+    "name": "Dr. Mehta",
+    "domain": "Cyber Security",
+    "email": "mehta@college.edu"
+  },
+  {
+    "name": "Dr. Gupta",
+    "domain": "Data Science",
+    "email": "gupta@college.edu"
+  }
+]
