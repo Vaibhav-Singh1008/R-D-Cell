@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynergyX | Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar relative-nav">
+        <div class="logo">R&<span>D</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">How it works</a>
+        </div>
+    </nav>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Create Account</h2>
+                <p id="regSubtitle">Register as a Student</p>
+            </div>
+
+            <div class="role-toggle">
+                <button class="role-btn active" id="regStudentBtn">Student</button>
+                <button class="role-btn" id="regFacultyBtn">Faculty</button>
+            </div>
+
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Institutional Email</label>
+                    <input type="email" placeholder="name@institute.ac.in" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Department</label>
+                    <input type="text" placeholder="e.g. Computer Science" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Create Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-primary w-full" id="regSubmitBtn">Create My Account</button>
+            </form>
+            
+            <p class="signup-link">Already have an account? <a href="login.html">Login Here</a></p>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
